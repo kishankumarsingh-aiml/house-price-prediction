@@ -44,5 +44,6 @@ git clone <your-github-repo-link>
 
 ---
 
-👉 [Click here to open Live App](https://house-price-prediction-kksinghbihar.streamlit.app/)
-
+## 🔗 Live Demo
+👉 [Click here to open Live App]
+https://house-price-prediction-kksinghbihar.streamlit.app/
