@@ -1,35 +1,43 @@
-# House Price Prediction using Machine Learning
+# 🏠 House Price Prediction App (AI/ML)
 
-This project predicts house prices based on different features such as area, number of bedrooms, and location using Machine Learning.
+This is a Machine Learning based *House Price Prediction Web Application* built using *Python* and *Streamlit*.  
+The app predicts house prices based on *area (sq ft)* and *number of bedrooms* using a *Linear Regression model*.
 
-## Technologies Used
+---
+
+## 🚀 Live Preview
+This project runs as an interactive web app using Streamlit.
+
+---
+
+## 🧠 Project Overview
+- Machine Learning model trained using sample housing data
+- Linear Regression algorithm used for prediction
+- Simple and clean web interface
+- Real-time price prediction
+
+This project is suitable for *beginners in AI/ML* and is *internship / resume ready*.
+
+---
+
+## 🛠 Tech Stack
 - Python
 - Pandas
-- NumPy
 - Scikit-learn
-- Matplotlib
+- Streamlit
 
-## Objective
-To build a simple regression model that can predict house prices and help beginners understand machine learning concepts.
+---
 
-## Status
-Project under development.
-## How to Run
+## 📊 Features
+- User-friendly web interface
+- Takes user input (Area & Bedrooms)
+- Predicts house price instantly
+- Fast and lightweight ML model
 
-1. Make sure Python is installed on your system.
-2. Install required libraries using:
-   pip install pandas scikit-learn
-3. Run the Python file:
-   python house_price_prediction.py
+---
 
-## Sample Output
+## ▶ How to Run the Project
 
-Mean Squared Error: <value>
-Predicted Price: <predicted house price>
-
-## Future Improvements
-
-- Use a larger real-world dataset
-- Add more features like location and year built
-- Apply advanced models like Random Forest or XGBoost
-- Build a web interface using Flask or Streamlit
+### Step 1: Clone or Download the Repository
+```bash
+git clone <your-github-repo-link>
