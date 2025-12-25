@@ -1,9 +1,12 @@
-# House Price Prediction using Machine Learning
-
+import streamlit as st
 import pandas as pd
-from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
-from sklearn.metrics import mean_squared_error
+from sklearn.model_selection import train_test_split
+
+# Title
+st.title("🏠 House Price Prediction App")
+
+st.write("Enter house details to predict price")
 
 # Sample dataset
 data = {
@@ -17,18 +20,15 @@ df = pd.DataFrame(data)
 X = df[['Area', 'Bedrooms']]
 y = df['Price']
 
-X_train, X_test, y_train, y_test = train_test_split(
-    X, y, test_size=0.2, random_state=42
-)
-
+# Train model
 model = LinearRegression()
-model.fit(X_train, y_train)
+model.fit(X, y)
 
-y_pred = model.predict(X_test)
+# User input
+area = st.number_input("Area (in sq ft)", min_value=500, max_value=3000, step=100)
+bedrooms = st.number_input("Number of Bedrooms", min_value=1, max_value=10, step=1)
 
-mse = mean_squared_error(y_test, y_pred)
-print("Mean Squared Error:", mse)
-
-new_house = [[1600, 3]]
-predicted_price = model.predict(new_house)
-print("Predicted Price:", predicted_price[0])
+# Prediction
+if st.button("Predict Price"):
+    prediction = model.predict([[area, bedrooms]])
+    st.success(f"💰 Predicted House Price: ₹ {prediction[0]:,.2f}")
