@@ -45,4 +45,4 @@ git clone <your-github-repo-link>
 ---
 
 ## 🔗 Live Demo
-👉 [Click here to open Live App] ( https://house-price-prediction-kksinghbihar.streamlit.app/)
+👉 [Click here to open Live App]( https://house-price-prediction-kksinghbihar.streamlit.app/)
