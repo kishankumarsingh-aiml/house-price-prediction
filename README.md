@@ -1,4 +1,3 @@
-README.md
 # House Price Prediction using Machine Learning
 
 This project predicts house prices based on different features such as area, number of bedrooms, and location using Machine Learning.
